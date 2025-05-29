@@ -30,7 +30,9 @@ export default function Home() {
       {/* Features Section */}
       <section className="py-20 bg-zinc-900/50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold tracking-tighter mb-12 text-center">Built for the Future of Fitness</h2>
+          <h2 className="text-3xl font-bold tracking-tighter mb-12 text-center">
+            Built for the Future of Fitness Health + Wellness
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-zinc-800/50 p-6 rounded-lg">
               <h3 className="text-xl font-semibold mb-4">Layer 3 Solution</h3>

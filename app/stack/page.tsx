@@ -10,9 +10,9 @@ export default function StackPage() {
         health, and wellness applications.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div className="border border-zinc-800 p-8 rounded-lg">
-          <h2 className="text-2xl font-semibold mb-4">Base.org Layer 3</h2>
+          <h2 className="text-2xl font-semibold mb-4">Base.org App Chain</h2>
           <p className="text-zinc-400 mb-4">
             FHDub is built on base.org's layer 2 solution, providing scalability, security, and low transaction costs
             for fitness, health, and wellness applications.
@@ -86,6 +86,40 @@ export default function StackPage() {
           </ul>
           <Link href="#" className="text-white inline-flex items-center hover:underline">
             Learn about agent-kit <ArrowRight size={16} className="ml-1" />
+          </Link>
+        </div>
+
+        <div className="border border-zinc-800 p-8 rounded-lg">
+          <h2 className="text-2xl font-semibold mb-4">Coinbase Onchain Kit</h2>
+          <p className="text-zinc-400 mb-4">
+            FHDub integrates Coinbase's Onchain Kit to provide seamless wallet connections and blockchain interactions
+            for users across the platform.
+          </p>
+          <ul className="space-y-2 text-zinc-400 mb-6">
+            <li>• Easy wallet connection and management</li>
+            <li>• Seamless transaction signing</li>
+            <li>• Multi-chain support and compatibility</li>
+            <li>• Enhanced user onboarding experience</li>
+          </ul>
+          <Link href="#" className="text-white inline-flex items-center hover:underline">
+            Explore Onchain Kit <ArrowRight size={16} className="ml-1" />
+          </Link>
+        </div>
+
+        <div className="border border-zinc-800 p-8 rounded-lg">
+          <h2 className="text-2xl font-semibold mb-4">Farcaster Social Graph</h2>
+          <p className="text-zinc-400 mb-4">
+            FHDub leverages the Farcaster protocol to create rich social experiences and community connections within
+            the fitness, health, and wellness ecosystem.
+          </p>
+          <ul className="space-y-2 text-zinc-400 mb-6">
+            <li>• Decentralized social networking features</li>
+            <li>• Community-driven content and discussions</li>
+            <li>• Social proof and reputation systems</li>
+            <li>• Cross-platform social identity</li>
+          </ul>
+          <Link href="#" className="text-white inline-flex items-center hover:underline">
+            Learn about Farcaster <ArrowRight size={16} className="ml-1" />
           </Link>
         </div>
       </div>
