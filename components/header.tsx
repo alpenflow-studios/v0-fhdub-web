@@ -1,11 +1,12 @@
-"use client"
+'use client'
 
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { useState } from "react"
 import { Menu, X } from "lucide-react"
+import { useState } from "react"
+import { ConnectWallet } from '@coinbase/onchainkit/wallet'
 
-const Header = () => {
+function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const toggleMenu = () => {
@@ -66,7 +67,14 @@ const Header = () => {
             </Link>
           </nav>
 
-          <Button className="hidden md:flex">Connect</Button>
+          {/* Smart Wallet Connect - Desktop */}
+          <div className="hidden md:flex">
+            <ConnectWallet 
+              className="bg-white text-black hover:bg-gray-200 px-4 py-2 rounded-md font-medium transition-colors"
+            >
+              <span>Connect Wallet</span>
+            </ConnectWallet>
+          </div>
 
           {/* Mobile Menu Button */}
           <button className="md:hidden" onClick={toggleMenu}>
@@ -101,7 +109,15 @@ const Header = () => {
             <Link href="/fhdubdao" className="text-sm hover:text-zinc-400 transition-colors">
               fhdubDAO
             </Link>
-            <Button className="w-full">Connect</Button>
+            
+            {/* Smart Wallet Connect - Mobile */}
+            <div className="pt-2">
+              <ConnectWallet 
+                className="w-full bg-white text-black hover:bg-gray-200 px-4 py-2 rounded-md font-medium transition-colors text-center"
+              >
+                <span>Connect Wallet</span>
+              </ConnectWallet>
+            </div>
           </nav>
         )}
       </div>
