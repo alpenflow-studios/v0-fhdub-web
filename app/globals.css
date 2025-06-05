@@ -60,3 +60,6 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* OnchainKit Styles */
+@import '@coinbase/onchainkit/styles.css';
